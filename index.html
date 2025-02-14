@@ -14,11 +14,15 @@
             background-size: contain;
             font-family: Arial, sans-serif;
             flex-direction: column;
+            position: relative;
         }
         .kitty {
             width: 150px;
             height: auto;
-            position: relative;
+            position: absolute;
+            bottom: 120px; /* Adjusted position to place on the mat */
+            left: 50%;
+            transform: translateX(-50%);
             transition: transform 1.5s ease-in-out;
         }
         .message {
