@@ -23,7 +23,6 @@
             bottom: 120px; /* Adjusted position to place on the mat */
             left: 50%;
             transform: translateX(-50%);
-            transition: transform 1.5s ease-in-out;
         }
         .message {
             font-size: 32px; /* Increased font size */
@@ -36,9 +35,6 @@
             opacity: 0;
             transition: opacity 1.5s ease-in-out;
         }
-        .show {
-            transform: translateY(-50px);
-        }
         .visible {
             opacity: 1;
         }
@@ -49,11 +45,9 @@
     <img src="images/hello-kitty.png" alt="Hello Kitty" class="kitty">
     <script>
         setTimeout(() => {
-            document.querySelector('.kitty').classList.add('show');
-            setTimeout(() => {
-                document.querySelector('.message').classList.add('visible');
-            }, 1500);
+            document.querySelector('.message').classList.add('visible');
         }, 1000);
     </script>
 </body>
 </html>
+
